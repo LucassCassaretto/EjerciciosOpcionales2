@@ -22,18 +22,16 @@ while (true)
     {
         for (int j = 0; j < matriz.GetLength(1); j++)
         {
-            matriz[i, j] = "O";
+            matriz[i, j] = "-";
 
             matriz[8, 4] = "X";
             matriz[2, 4] = "X";
             matriz[7, 3] = "X";
             matriz[1, 1] = "X";
             matriz[2, 5] = "X";
-            matriz[2, 4] = "X";
+            matriz[4, 4]= "X";
             matriz[5, 6] = "X";
             matriz[1, 4] = "X";
-
-
         }
 
     }
