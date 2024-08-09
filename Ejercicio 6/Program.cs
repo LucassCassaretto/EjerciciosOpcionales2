@@ -10,7 +10,7 @@
 
 
 using System.Runtime.CompilerServices;
-
+Random clima = new Random();
 int[,] calendario = new int [5,7];
 int[] vec1 = new int[7];
 int[] vec2 = new int[7];
@@ -18,7 +18,6 @@ int[] vec3 = new int[7];
 int[] vec4 = new int[7];
 int[] vec5 = new int[7];
 int cont = 0;
-
 
 for (int i = 0; i < calendario.GetLength(0); i++)
 {
@@ -31,10 +30,7 @@ for (int i = 0; i < calendario.GetLength(0); i++)
         cont++;
         if (cont <= 31)
         {
-            Random clima = new Random();
-            int temp = clima.Next(7, 38);
-
-            calendario[i, j] = temp;
+            calendario[i, j] = clima.Next(7, 38); 
         }
         else calendario[i, j] = 0;
         if (i == 0)
