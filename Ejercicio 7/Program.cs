@@ -40,16 +40,7 @@ for (int i = 1; i < tablas.GetLength(0); i++)
 
 
 
-
-for (int i = 0; i < tablas.GetLength(0); i++)
-{
-    for (int j = 0; j < tablas.GetLength(1); j++)
-    {
-        Console.Write(tablas[i, j] + "\t");
-    }
-    Console.WriteLine();
-}
-
+mostarTablas(tablas);
 
 
 static int calcularTablas(int[,] vec, int j, int i)
@@ -60,4 +51,18 @@ static int calcularTablas(int[,] vec, int j, int i)
     int multiplicacion= fila * columna;
 
     return multiplicacion;
+}
+
+static void mostarTablas(int[,] tablas)
+{
+
+    for (int i = 0; i < tablas.GetLength(0); i++)
+    {
+        for (int j = 0; j < tablas.GetLength(1); j++)
+        {
+            Console.Write(tablas[i, j] + "\t");
+        }
+        Console.WriteLine();
+    }
+
 }
