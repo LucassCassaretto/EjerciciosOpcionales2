@@ -67,8 +67,7 @@ int cont2= 0;
 int MaximoCalor = 0;
 for (int i = 0; i < calendario.GetLength(0); i++)
 {
-    //int semana = i + 1;
-    //Console.WriteLine("semana: " + semana);
+ 
 
     for (int j = 0; j< calendario.GetLength(1); j++)
     {

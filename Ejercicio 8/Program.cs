@@ -6,17 +6,22 @@
  */
 string[,] matriz = new string[10, 10];
 int cont = 0;
+bool verificacion1= false;
+bool verificacion2 = false;
 while (true)
 {
 
     Console.Write("Ingrese la posicion X: ");
-    int.TryParse(Console.ReadLine(), out int X);
+    verificacion1   = int.TryParse(Console.ReadLine(), out int X);
 
     Console.Write("Ingrese la posicion Y: ");
-    int.TryParse(Console.ReadLine(), out int Y);
+    verificacion2 =int.TryParse(Console.ReadLine(), out int Y);
 
-
-    
+    if (verificacion1 == false || verificacion2 == false)
+    {
+        Console.WriteLine("--Debe ingresar un numeros--");
+        continue;
+    }
 
     for (int i = 0; i < matriz.GetLength(0); i++)
     {

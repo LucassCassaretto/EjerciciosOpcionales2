@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Reflection.Metadata.Ecma335;
 using System.Xml.Schema;
 
-List<string> names = new List<string> { "Zoe", "Luis", "Josefina", "Carlos", "Elena" };
+List<string> names = new List<string> { "Zoe", "Luis", "Josefina", "Carlos", "Agustin" };
 
 string mayor = names.OrderByDescending(name => name.Length).FirstOrDefault();
 string menor = names.OrderBy(name => name.Length).FirstOrDefault();
